@@ -1,5 +1,5 @@
 Name:		apvlv
-Version:	0.1.2
+Version:	0.1.4
 Release:	1
 Summary:	A PDF viewer which behaves like Vim
 URL:		http://naihe2010.github.com/apvlv/
@@ -7,9 +7,6 @@ Group:		Office
 License:	GPLv2
 Source0:	https://github.com/downloads/naihe2010/apvlv/%{name}-%{version}-Source.tar.gz
 Source1:	%{name}.desktop
-Patch0:		apvlv-poppler015.patch
-# fedora patch but rediff'd for 0.1.2
-Patch1:		apvlv-poppler017.patch
 
 BuildRequires:	cmake
 BuildRequires:	pkgconfig(ddjvuapi)
@@ -21,7 +18,6 @@ Apvlv is a PDF viewer which behaves like Vim.
 
 %prep
 %setup -qn %{name}-%{version}-Source
-%apply_patches
 
 %build
 %cmake \

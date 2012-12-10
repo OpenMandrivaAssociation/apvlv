@@ -41,3 +41,14 @@ install -m0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
 
+
+
+%changelog
+* Tue Jul 17 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.1.4-1
++ Revision: 810007
+- version update 0.1.4
+
+* Wed Jan 25 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.1.2-1
++ Revision: 768342
+- imported package apvlv
+

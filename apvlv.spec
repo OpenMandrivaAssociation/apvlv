@@ -1,6 +1,6 @@
 Name:		apvlv
 Version:	0.1.4
-Release:	1
+Release:	2
 Summary:	A PDF viewer which behaves like Vim
 URL:		http://naihe2010.github.com/apvlv/
 Group:		Office

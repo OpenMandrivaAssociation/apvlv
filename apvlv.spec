@@ -1,23 +1,26 @@
 Name:		apvlv
-Version:	0.1.4
-Release:	2
+Version:	0.4.0
+Release:	1
 Summary:	A PDF viewer which behaves like Vim
-URL:		http://naihe2010.github.com/apvlv/
+URL:		https://github.com/naihe2010/apvlv
 Group:		Office
 License:	GPLv2
-Source0:	https://github.com/downloads/naihe2010/apvlv/%{name}-%{version}-Source.tar.gz
+Source0:	https://github.com/naihe2010/apvlv/archive/refs/tags/v%{version}.tar.gz
 Source1:	%{name}.desktop
 
 BuildRequires:	cmake
 BuildRequires:	pkgconfig(ddjvuapi)
-BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(poppler-glib)
+BuildRequires:	pkgconfig(freetype2)
+BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:	pkgconfig(glib-2.0)
+BuildRequires:	pkgconfig(webkit2gtk-4.0)
 
 %description
 Apvlv is a PDF viewer which behaves like Vim.
 
 %prep
-%setup -qn %{name}-%{version}-Source
+%autosetup -p1
 
 %build
 %cmake \
@@ -34,21 +37,6 @@ install -m0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/
 %files 
 %{_bindir}/%{name}
 %{_sysconfdir}/%{name}rc
-%doc %{_datadir}/%{name}/Startup.pdf
-%doc %{_datadir}/%{name}/Startup.tex
-%doc %{_datadir}/%{name}/apvlvrc.example
-%{_datadir}/%{name}/icons/*.png
+%{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
-
-
-
-%changelog
-* Tue Jul 17 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.1.4-1
-+ Revision: 810007
-- version update 0.1.4
-
-* Wed Jan 25 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.1.2-1
-+ Revision: 768342
-- imported package apvlv
-

@@ -17,7 +17,7 @@ BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(webkit2gtk-4.0)
 BuildRequires:	ebook-tools-devel
 BuildRequires:	man
-BuildRequires:	ghostscript-common
+BuildRequires:	ghostscript
 
 %description
 Apvlv is a PDF viewer which behaves like Vim.

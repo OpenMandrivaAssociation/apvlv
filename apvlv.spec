@@ -15,6 +15,7 @@ BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(webkit2gtk-4.0)
+BuildRequires:	ebook-tools-devel
 
 %description
 Apvlv is a PDF viewer which behaves like Vim.

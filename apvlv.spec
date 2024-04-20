@@ -1,11 +1,11 @@
 Name:		apvlv
-Version:	0.4.0
+Version:	0.5.0
 Release:	1
 Summary:	A PDF viewer which behaves like Vim
 URL:		https://github.com/naihe2010/apvlv
 Group:		Office
 License:	GPLv2
-Source0:	https://github.com/naihe2010/apvlv/archive/refs/tags/v%{version}.tar.gz
+Source0:	https://github.com/naihe2010/apvlv/archive/refs/tags/v%{version}-final/%{name}-%{version}-final.tar.gz
 Source1:	%{name}.desktop
 
 BuildRequires:	cmake
@@ -14,7 +14,7 @@ BuildRequires:	pkgconfig(poppler-glib)
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(webkit2gtk-4.0)
+BuildRequires:	pkgconfig(webkit2gtk-4.1)
 BuildRequires:	ebook-tools-devel
 BuildRequires:	man
 BuildRequires:	ghostscript
@@ -23,7 +23,7 @@ BuildRequires:	ghostscript
 Apvlv is a PDF viewer which behaves like Vim.
 
 %prep
-%autosetup -p1
+%autosetup -%{name}-%{version}-final -p1
 
 %build
 %cmake \

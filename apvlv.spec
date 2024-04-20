@@ -43,4 +43,4 @@ install -m0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/
 %{_sysconfdir}/%{name}rc
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
-%{_mandir}/man1/%{name}.1*
+#{_mandir}/man1/%{name}.1*

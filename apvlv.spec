@@ -23,7 +23,7 @@ BuildRequires:	ghostscript
 Apvlv is a PDF viewer which behaves like Vim.
 
 %prep
-%autosetup -%{name}-%{version}-final -p1
+%autosetup -n %{name}-%{version}-final -p1
 
 %build
 %cmake \

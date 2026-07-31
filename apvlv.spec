@@ -1,6 +1,6 @@
 Name:		apvlv
-Version:	0.5.0
-Release:	2
+Version:	0.7.0
+Release:	1
 Summary:	A PDF viewer which behaves like Vim
 URL:		https://github.com/naihe2010/apvlv
 Group:		Office
@@ -24,7 +24,7 @@ BuildRequires:	ghostscript
 Apvlv is a PDF viewer which behaves like Vim.
 
 %prep
-%autosetup -n %{name}-%{version}-final -p1
+%autosetup -n apvlv-0.7.0-final -p1
 
 %build
 %cmake \

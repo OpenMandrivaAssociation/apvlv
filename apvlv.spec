@@ -37,6 +37,8 @@ Apvlv is a PDF viewer which behaves like Vim.
 
 %prep
 %autosetup -n apvlv-0.7.0-final -p1
+# lrelease writes the qm file before cmake creates this directory.
+mkdir -p share/doc/apvlv/translations
 
 %build
 %cmake \

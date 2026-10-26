@@ -9,6 +9,7 @@ Source0:	https://github.com/naihe2010/apvlv/archive/refs/tags/v%{version}-final/
 Source1:	%{name}.desktop
 
 BuildRequires:	cmake
+BuildRequires:	make
 BuildRequires:	pkgconfig(ddjvuapi)
 BuildRequires:	pkgconfig(poppler-glib)
 BuildRequires:	pkgconfig(freetype2)

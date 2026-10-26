@@ -19,6 +19,14 @@ BuildRequires:	pkgconfig(webkit2gtk-4.1)
 BuildRequires:	ebook-tools-devel
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(quazip1-qt6)
+BuildRequires:	cmake(Qt6Core)
+BuildRequires:	cmake(Qt6Gui)
+BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:	cmake(Qt6WebEngineWidgets)
+BuildRequires:	cmake(Qt6Pdf)
+BuildRequires:	cmake(Qt6PdfWidgets)
+BuildRequires:	cmake(Qt6Xml)
+BuildRequires:	cmake(Qt6PrintSupport)
 BuildRequires:	man
 BuildRequires:	ghostscript
 

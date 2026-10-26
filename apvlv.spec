@@ -18,6 +18,7 @@ BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(webkit2gtk-4.1)
 BuildRequires:	ebook-tools-devel
 BuildRequires:	pkgconfig(libxml-2.0)
+BuildRequires:	pkgconfig(quazip1-qt6)
 BuildRequires:	man
 BuildRequires:	ghostscript
 

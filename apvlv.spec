@@ -27,6 +27,7 @@ BuildRequires:	cmake(Qt6Pdf)
 BuildRequires:	cmake(Qt6PdfWidgets)
 BuildRequires:	cmake(Qt6Xml)
 BuildRequires:	cmake(Qt6PrintSupport)
+BuildRequires:	cmake(Qt6LinguistTools)
 BuildRequires:	pkgconfig(libcmark)
 BuildRequires:	man
 BuildRequires:	ghostscript

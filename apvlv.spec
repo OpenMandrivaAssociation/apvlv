@@ -55,10 +55,15 @@ mkdir -p share/doc/apvlv/translations
 %makeinstall_std -C build
 mkdir -p %{buildroot}%{_datadir}/applications/
 install -m0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/
+# The viewer loads SYSCONFDIR/apvlvrc, and ships the defaults as the example.
+install -m0644 %{buildroot}%{_sysconfdir}/apvlvrc.example %{buildroot}%{_sysconfdir}/apvlvrc
 
-%files 
+%files
 %{_bindir}/%{name}
-%{_sysconfdir}/%{name}rc
-%{_datadir}/%{name}
+%config(noreplace) %{_sysconfdir}/apvlvrc
+%config(noreplace) %{_sysconfdir}/apvlvrc.example
+%dir %{_datadir}/scripts
+%{_datadir}/scripts/internal.js
+%{_datadir}/doc/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/apvlv.1

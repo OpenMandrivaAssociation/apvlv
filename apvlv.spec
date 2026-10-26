@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(webkit2gtk-4.1)
 BuildRequires:	ebook-tools-devel
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(quazip1-qt6)
+BuildRequires:	cmake(Qt6Core5Compat)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Gui)
 BuildRequires:	cmake(Qt6Widgets)
@@ -43,6 +44,9 @@ mkdir -p share/doc/apvlv/translations
 %build
 %cmake \
 	-DAPVLV_WITH_UMD:BOOL=OFF \
+	-DAPVLV_WITH_MUPDF:BOOL=OFF \
+	-DAPVLV_WITH_OFFICE:BOOL=OFF \
+	-DAPVLV_WITH_OCR:BOOL=OFF \
 	-DDOCDIR=%{_datadir}/%{name}
 
 %make
